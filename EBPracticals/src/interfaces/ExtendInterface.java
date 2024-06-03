@@ -3,13 +3,12 @@ package interfaces;
 interface act
 {
 	public void acting();
-
 }
-interface actor extends act
+interface actor extends act //HAS-A
 {
 	public void play();
 }
-class amitab implements actor
+class amitab implements actor //IS-A
 {
 	@Override
 	public void acting() {
@@ -19,7 +18,6 @@ class amitab implements actor
 	@Override
 	public void play() {
 		System.out.println("he can play");
-		
 	}
 }
 public class ExtendInterface {
@@ -29,7 +27,5 @@ public class ExtendInterface {
 		amitab a = new amitab();
 		a.acting();
 		a.play();
-
 	}
-
 }
