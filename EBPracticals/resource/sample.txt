@@ -1,0 +1,31 @@
+package collectionsDemo;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class HashMapExample {
+
+	public static void main(String[] args) {
+		
+		Map<Integer,String> school = new HashMap <Integer,String>(); // created the reference & allocated the mem.
+		
+		school.put(101, "Rahul");
+		school.put(102, "Santhosh");
+		school.put(103, "kumar");
+		school.put(104, "varun");
+		school.put(105, "tarun");
+		school.put(106, "tarun");
+		
+		System.out.println(school.keySet());
+		System.out.println(school.values());
+		
+		System.out.println(school.entrySet());
+		
+//		for(Map.Entry<Integer, String> onePair : school.entrySet())
+//		{
+//			System.out.println("Stud id: " + onePair.getKey() + "   Stud Name: " + onePair.getValue());
+//		}
+
+	}
+
+}
